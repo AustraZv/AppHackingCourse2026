@@ -1,5 +1,5 @@
 (for this assignment, and this assignment only, I used my M4 Macbook air)
-I started by installing the Go language package from Homebrew, then I copied a basic hello world script, and analyzed it
+I started by installing the Go language package from Homebrew, then I copied a basic hello world script, and analyzed it, I found the code on this page https://gobyexample.com/hello-world
 
 
 	package main
