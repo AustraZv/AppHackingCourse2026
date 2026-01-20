@@ -30,8 +30,7 @@ ISP - DNA
 Device vendors - Lenovo for the home desktop, Apple for the laptop, Valve for the Steam Deck
 Hosting provider for Tero's website and Haaga Helia's Moodle.
 
-![[FlowchartOrganization.png]]
-## Evidence
+![[FlowchartOrganization.png]](FlowchartOrganization.png)
 What evidence could I present? :
 Screenshots of the router settings
 An audited and complete device list in my home
