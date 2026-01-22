@@ -112,6 +112,7 @@ I simply copied the test function from there, to AdminShowAllView
 I had solved this in class, but I solved it again here
 I observed in the URL that it used string contactenation for executing SQL queries, I then typed in ```
 filter?category='OR 1=1 OR ' '='
+
 ```
 and got access
 
