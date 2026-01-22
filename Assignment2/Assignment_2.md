@@ -1,3 +1,15 @@
+## x)
+# OWASP A01:2021
+These are things I mostly knew already, the need for access management is very easy to comprehend, yet thousands of websites are still online with no protection. I remember watching a security talk where a lot of websites that should not have been public were shown, one of them was a control panel to a  French hydroelectric power plant. All online, no access control, nothing.
+
+The methods listed here for prevention are not that difficult to implement, and to me, its quite mindboggling that some organizations are still willing to sacrifice their security for minor convinience in administration.
+
+# Find Hidden Web Directories - Fuzz URLs with ffuf - Tero Karvinen
+
+I am writing this after doing the practical exercises, and ffuf was very easy to understand and the ammount of documentation it comes with is amazing. 
+
+# Access control vulnerabilities and privilege escalation - Portswigger
+It still is suprising to me that some people still submit settings in the URL or base HTML, it feels like some developers do not know about inspect element or the fact that URL's can be changed. 
 
 
 ## a)
