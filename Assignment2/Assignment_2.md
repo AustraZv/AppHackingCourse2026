@@ -110,10 +110,12 @@ I simply copied the test function from there, to AdminShowAllView
 ## g)
 
 I had solved this in class, but I solved it again here
-I observed in the URL that it used string contactenation for executing SQL queries, I then typed in ```
-filter?category='OR 1=1 OR ' '='
+I observed in the URL that it used string contactenation for executing SQL queries, I then typed in
 
 ```
+filter?category='OR 1=1 OR ' '='
+```
+
 and got access
 
 <img width="2512" height="660" alt="image" src="https://github.com/user-attachments/assets/bd8a43a1-d4ba-4153-b83f-0efe7c76a91e" />
