@@ -119,3 +119,12 @@ filter?category='OR 1=1 OR ' '='
 and got access
 
 <img width="2512" height="660" alt="image" src="https://github.com/user-attachments/assets/bd8a43a1-d4ba-4153-b83f-0efe7c76a91e" />
+
+## h)
+I first checked what the request contained in the developer console, then changed my password to an SQL injection
+
+<img width="598" height="232" alt="image" src="https://github.com/user-attachments/assets/014e0ff4-d484-443f-868e-d72ac945aadc" />
+
+This request was succesful and I got in
+
+<img width="2280" height="478" alt="image" src="https://github.com/user-attachments/assets/b445997d-97e3-4f8e-8df5-f8529bc2dccd" />
