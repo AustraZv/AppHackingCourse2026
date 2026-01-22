@@ -83,19 +83,22 @@ After this, I tested the program, and the injection failed!!!!
 
 ![Screenshot 2026-01-20 at 22.01.21.png](Screenshot_2026-01-20_at_22.01.21.png)
 ## c)
-I downloaded the wordlist, dirfuzt-0 and ffuf on my VM, and then opened the page
-<img width="811" height="557" alt="image" src="https://github.com/user-attachments/assets/071fdc04-616c-4c2a-8549-93f604b5e51a" />
+I downloaded the wordlist, dirfuzt-1 and ffuf on my VM, and then opened the page
 
-I ran ffuf with the wordlist, and after getting the output with 132 b responses, i filtered for file size and got the correct result
+After running ffuf on it, I noticed that most URL's were 154 bytes large
+<img width="654" height="515" alt="image" src="https://github.com/user-attachments/assets/a5a3acd4-d654-4091-bcd4-e6b3751ae1b6" />
 
-<img width="867" height="515" alt="image" src="https://github.com/user-attachments/assets/8d181bb1-353e-4bf2-b2ed-c84957e4c78a" />
+I ran ffuf on it with a filter for 154 bytes and got this output
+<img width="961" height="573" alt="image" src="https://github.com/user-attachments/assets/04423b15-c925-4b7d-bcc6-ba8bbc81dc1c" />
+
+As wp-admin was the only page that did not seem related to git or google, and as it had a very suspicious name, i checked it first, and found the flag.
+
+<img width="444" height="668" alt="image" src="https://github.com/user-attachments/assets/4ff2f557-ca78-4581-a267-69b3ff5e8fa2" />
+
+
 
 (side note, i am logged in as root because i have not added my user to sudo users yet, which I will after this)
 
-
-
-I accsesed the admin page and got in.
-<img width="482" height="515" alt="image" src="https://github.com/user-attachments/assets/e1a7b8a0-b9a8-4a44-be39-d9cb7a2d1a95" />
 
 ## d)
 This assignment was easier than 010
