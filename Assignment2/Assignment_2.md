@@ -4,6 +4,7 @@ These are things I mostly knew already, the need for access management is very e
 
 The methods listed here for prevention are not that difficult to implement, and to me, its quite mindboggling that some organizations are still willing to sacrifice their security for minor convinience in administration.
 
+
 # Find Hidden Web Directories - Fuzz URLs with ffuf - Tero Karvinen
 
 I am writing this after doing the practical exercises, and ffuf was very easy to understand and the ammount of documentation it comes with is amazing. 
@@ -91,7 +92,7 @@ After setting up django and disconnecting from the internet. I tested out the we
 ![[Screenshot 2026-01-20 at 23.28.20.png]](Screenshot_2026-01-20_at_23.28.20.png)
 ![[Screenshot 2026-01-20 at 23.42.36.png]](Screenshot_2026-01-20_at_23.42.36.png)
 
-e)
+## e)
 I was quite stuck, until I checked the tips, and realized that permission checking is done in the views.py file
 
 Then I noticed that function in AdminShowAllView was missing checks for permissions that were present in the AdminDashBoardView.
@@ -101,7 +102,17 @@ Then I noticed that function in AdminShowAllView was missing checks for permissi
 ![[Screenshot_2026-01-21_at_16.09.56.png]](Screenshot_2026-01-21_at_16.09.56.png)
 I simply copied the test function from there, to AdminShowAllView
 
+
 ![[Screenshot_2026-01-21_at 16.10.12.png]](Screenshot_2026-01-21 at_16.10.12.png)After that, the page showed a 403 error.
 ![[Pasted image 20260121161343.png]](Pasted_image_20260121161343.png)
 
 
+## g)
+
+I had solved this in class, but I solved it again here
+I observed in the URL that it used string contactenation for executing SQL queries, I then typed in ```
+filter?category='OR 1=1 OR ' '='
+```
+and got access
+
+<img width="2512" height="660" alt="image" src="https://github.com/user-attachments/assets/bd8a43a1-d4ba-4153-b83f-0efe7c76a91e" />
