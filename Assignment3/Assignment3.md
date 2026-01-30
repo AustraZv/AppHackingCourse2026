@@ -25,6 +25,8 @@ g++ -o passtr "passtr.c" "lib/sha256.c"  -I "lib"
 The program now operates correctly, and does not show the password in strings.
 <img width="715" height="464" alt="image" src="https://github.com/user-attachments/assets/5ebc5d76-f056-4cc4-bfd8-72bd12c1ef2a" />
 
+<img width="540" height="73" alt="image" src="https://github.com/user-attachments/assets/0dd0ab87-f526-4d79-81c1-55eb767f4651" />
+
 
 
 
