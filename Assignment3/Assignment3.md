@@ -1,10 +1,10 @@
-## a) finding the flag in ezbin challanges passtr
+## a) Finding the flag in ezbin challanges. passtr
 I downloaded the ezbin-challanges(https://terokarvinen.com/loota/yctjx7/ezbin-challenges.zip) and compiled passstr.
 I had no familiarity with strings before and decided to check the man pages. 
 After that I ran the program and found the flag 
 <img width="522" height="87" alt="Screenshot 2026-01-28 at 16 15 42" src="https://github.com/user-attachments/assets/bb538030-639c-4b29-9f19-83343126b675" />
 
-## b)
+## b) Fixing the vulnerability
 My idea for this was to use hashing, specifically sha256.
 I read up on hashing in C, there were some libraries online that were really simple but I wanted to use something widely supported like openssl. Looking through openSSL documentation, I found that the SHA256 function was no longer supported, and instead you had to use EVP(https://docs.openssl.org/1.0.2/man3/sha/#description). However, both on my macbook and my linux desktop I could not get the openssl library to be properly recognized, online.  I got the library working on my Macbook but the library was x86 only, and I could not get it working quickly on opensuse so I gave up. I ended up using this library (https://lucidar.me/en/dev-c-cpp/sha-256-in-c-cpp/), and I followed the instructions given.
 After this, I looked up on how to run sha256sum on a string, and found this suggestion (https://stackoverflow.com/questions/3358420/generating-a-sha-256-hash-from-the-linux-command-line)
@@ -30,7 +30,7 @@ The program now operates correctly, and does not show the password in strings.
 
 
 
-## c) packd in ez-bin challanges
+## c) Finding the flag in ez-bin-challanges. packd
 I first viewed it in strings and observed 2 things, 
 1) piilos-An looked to be the password
 2) Sorry was turned to S1rry
