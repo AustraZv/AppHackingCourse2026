@@ -106,9 +106,6 @@ Already covered in f)
 
 The program is very simmilar and we can see the same two solutions, except this time the program subtracts -2 from the password character's ASCII values, which means it expects an output encoded with ROT -2
 
-<img width="1118" height="150" alt="image" src="https://github.com/user-attachments/assets/13be8ac3-465c-49af-9662-4e74f4b62995" />
-
-
 The first solution is the same - empty string
 
 <img width="866" height="74" alt="image" src="https://github.com/user-attachments/assets/0354c1e1-fe0b-482d-a89b-1b3a396fafa0" />
