@@ -70,13 +70,13 @@ This can check for the end of the string, but also can allow a null output to be
 
 Then, the program checks the value of the checking variable, if it is false, it returns 0, otherwise it proceeds. 
 
-In the final part of the loop the program checks weather the inputted string matches the password string with 1 subtracted from its ASCII value. Otherwise, it exits the loop.  This effectively encodes the input string with ROT -1 
+In the final part of the loop the program checks weather the character[i]  of the input string matches the corresponding character of the password string with 1 subtracted from its ASCII value. Otherwise, it exits the loop.  This effectively checks if the input string matches the password string that is encoded with ROT -1 
 
 After the loop, if the loop managed to break without returning, the program outputs that the password is false and sets the return value to 1.
 
 From this we can infer 2 solutions
 1) pass an empty string
-2) encode the password to ROT -1
+2) encode the password string to ROT -1
 
    First solution
    <img width="944" height="66" alt="image" src="https://github.com/user-attachments/assets/d5b70d5e-d41b-40b1-9386-31c7e47232a3" />
