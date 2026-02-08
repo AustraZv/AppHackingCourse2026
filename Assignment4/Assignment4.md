@@ -1,3 +1,8 @@
+## x) 
+https://www.youtube.com/watch?v=oTD_ki86c9I
+
+Interesting and easy to understand guide, with a practical demonstration in a CTF, though I already learned most of the tips here from the lecture.
+
 ## a) Installing Ghidra
 I already had Ghidra installed on my computer
 ## b) Find password in packd and analyze the program 
