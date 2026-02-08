@@ -70,7 +70,7 @@ Then it initializes an increment variable, that will increment by 1 each cycle.
 Then it launches the while loop, which will proceed until the 'break' arguement.
 It initializes a checking variable, giving it the value false.
 
-First it checks if the current character of the password string is null, if it is not, it sets the value of the checking variable to true if the current character is not a null, and to false if it is. 
+First it checks if the current character of the password string is null, if it is not, it sets the value of the checking variable to true if the current character of the input string is not a null, and to false if it is. 
 This can check for the end of the string, but also can allow a null output to be flagged as true.
 
 Then, the program checks the value of the checking variable, if it is false, it returns 0, otherwise it proceeds. 
