@@ -42,6 +42,8 @@ I copied and slightly modified the code from the comparision function
 <img width="545" height="332" alt="image" src="https://github.com/user-attachments/assets/615abb45-7e41-456a-bbcc-e2457e92c810" />
 
 It produced this string - "dgOMm-x1"
+
+
 <img width="483" height="107" alt="image" src="https://github.com/user-attachments/assets/4a66cde6-55ae-4737-b10c-9ac8ef8b88f1" />
 
 And I tested it, and I got the flag.
