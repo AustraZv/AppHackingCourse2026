@@ -46,5 +46,29 @@ It produced this string - "dgOMm-x1"
 
 And I tested it, and I got the flag.
 
+## c) crackme03 and 04
+
+# crackme  03
+After analyzing the code in ghidra I realized that the program takes 2 strings,  "lAmBdA" and "\x02\x03\x02\x03\x05"(corresponding to ascii characters number 2,3,2,3,5), and sums them, effectively rotating the string  with a unique character.
+<img width="566" height="590" alt="image" src="https://github.com/user-attachments/assets/dafae674-d0fa-4842-80b0-cf7f61490e0e" />
+
+<img width="483" height="107" alt="image" src="https://github.com/user-attachments/assets/d8e55c8d-dbd3-408a-817a-ac617eddc7e2" />
+
+As a result we get nDoEiA  
+<img width="543" height="39" alt="image" src="https://github.com/user-attachments/assets/9722ddf0-4a71-44cb-a7cf-2233753d30ec" />
+
+# crackme04
+
+After analyzing the code  in ghidra, I realized that the code expected a 16 character string where all the ascii values sum to 1762
+<img width="657" height="919" alt="image" src="https://github.com/user-attachments/assets/abfde4c6-6ac0-4348-9b9b-0923385e7d1e" />
+
+1762/16=110 mod 2
+so if we output 1 character  with the value 112, and 15 with the value 110, we should get in. 
+112 = p, 110 = n
+<img width="614" height="39" alt="image" src="https://github.com/user-attachments/assets/7ebc84db-936a-4fdd-931e-f055170ee1f1" />
+
+
+
+
 
 
