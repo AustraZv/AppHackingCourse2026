@@ -22,12 +22,12 @@ This is the resulting document
 ## c) FOSS (Free Android OpenSource). Explore Android applications from Offa's (2024) list. https://github.com/offa/android-foss
 I decided to investigate Etar, an open source calendar app, I chose it because I've used it before and was curious to look inside.
 
-# JADX 
+### JADX 
 After running the jadx command in the terminal, the decompiler produced these directories as output, full of various java files, with functions and objects all being serperate, some files are just a singular function.
 <img width="1550" height="1754" alt="image" src="https://github.com/user-attachments/assets/e7818042-bd43-4b76-80d5-7f898905faea" />
 
 Ill further investigate the code in the gui version of jadx
-# JADX-gui
+### JADX-gui
 <img width="2166" height="1458" alt="image" src="https://github.com/user-attachments/assets/5a60e1b9-8744-44cd-bd4a-deda90167689" />
 After opening the same .apk in jadx-gui, i used the go to application button to find the core of the app, its very small, and in typical java fashion, everything is split into multiple files. The decompiler does treat it all like a single project but it is a lot harder to navigate than Ghidra. Even for complex files, I generally find managing binaries in ghidra to be more straight-forward, but maybe that is because my first coding experience came from c++.
 
@@ -47,9 +47,9 @@ Still, the application DOES NOT specify that it has a mandatory or optional requ
 <img width="1370" height="428" alt="image" src="https://github.com/user-attachments/assets/e117855c-e5ae-4b4b-ad6b-db3dd617f13a" />
 Granted, the application does check for permissions, however, it does not specify that in fdroid, or on github, or in any documentation(to my knowledge)
 Further investigation did yield that this file is a part of a range of files from AOSP(Android Open Source Project) for general app compatability. (https://cs.android.com/android/platform/superproject/+/master:frameworks/base/services/core/java/com/android/server/twilight/TwilightManager.java;l=14). It is likely that the developer just copied over the library or the library in its entirety is required for proper compilation. 
-# ZIP
+### ZIP
 After renaming and unzipping the file, the resources of the file were visible, some of the structure was maintained but all the classes were put into .dex files, that have compiled binary code.
 <img width="1810" height="1856" alt="image" src="https://github.com/user-attachments/assets/ba089ed1-463b-44cd-94a7-b127180ef917" />
-# byte-unpacker
+### byte-unpacker
 Byte-unpacker generally felt very simmilar to the gui version of jadx, but with a far worse UI and less functionality. 
 
