@@ -39,7 +39,17 @@ The file contains various functions for many core operations, such as creation o
 
 <img width="1550" height="1754" alt="image" src="https://github.com/user-attachments/assets/7630c26a-631b-4d3a-9337-6204564d0c92" />
 
+I noticed that there was a deobfuscation button, which simplified the structure of the program,making it a lot more readable. More interestingly there was an analysis tool called Quark engine, which analyzes the system calls of a program to try to identify malware. 
+Suprisingly, the tool gave the program a very high risk level.
+<img width="1204" height="262" alt="image" src="https://github.com/user-attachments/assets/fc2d4abe-f7c1-4387-91b4-fd25072e8f60" />
+This can be partially explained by it being a calendar app and requiring many permissions, such as access to the contact list, however, some permissions were absent from the fdroid page(https://f-droid.org/packages/ws.xsoh.etar/), such as location. The application uses location to estimate twilight, to set dark mode. 
+Still, the application DOES NOT specify that it has a mandatory or optional request for location, and this code is quite damming.
+<img width="1370" height="428" alt="image" src="https://github.com/user-attachments/assets/e117855c-e5ae-4b4b-ad6b-db3dd617f13a" />
+Granted, the application does check for permissions, however, it does not specify that in fdroid, or on github, or in any documentation(to my knowledge)
+Further investigation did yield that this file is a part of a range of files from AOSP(Android Open Source Project) for general app compatability. (https://cs.android.com/android/platform/superproject/+/master:frameworks/base/services/core/java/com/android/server/twilight/TwilightManager.java;l=14). It is likely that the developer just copied over the library or the library in its entirety is required for proper compilation. 
 # ZIP
 After renaming and unzipping the file, the resources of the file were visible, some of the structure was maintained but all the classes were put into .dex files, that have compiled binary code.
 <img width="1810" height="1856" alt="image" src="https://github.com/user-attachments/assets/ba089ed1-463b-44cd-94a7-b127180ef917" />
 # byte-unpacker
+Byte-unpacker generally felt very simmilar to the gui version of jadx, but with a far worse UI and less functionality. 
+
