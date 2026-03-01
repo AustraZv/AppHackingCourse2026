@@ -53,3 +53,12 @@ After renaming and unzipping the file, the resources of the file were visible, s
 ### byte-unpacker
 Byte-unpacker generally felt very simmilar to the gui version of jadx, but with a far worse UI and less functionality. 
 
+## d) esp32 analysis
+
+I looked through the projects provided, but most of them had only bare source code, not binaries
+
+Looking through analysis procedures, a lot of the tools were poorly documented and a lot of documentation revolved around extracting flashes.
+
+I found this collection of links https://github.com/BlackVS/ESP32-reversing?tab=readme-ov-file#ghidra and this article https://vik0t0r.github.io/posts/ESP32-arduino-RE/ that were very interesting, but by the end I was too tired to continue. 
+
+I did learn about how function definitions work with esp32 though.
